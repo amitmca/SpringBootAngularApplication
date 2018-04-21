@@ -1,4 +1,4 @@
-package com.example.todoapp.models;
+package com.org.todoapp.models;
 
 import java.util.Date;
 import javax.validation.constraints.NotBlank;
@@ -8,6 +8,10 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+/**
+ * @author SAGAR
+ *
+ */
 @Document(collection="todos")
 @JsonIgnoreProperties(value = {"createdAt"}, allowGetters = true)
 public class Todo {
